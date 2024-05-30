@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head><h1>동아리 가입 양식</h1></head>
+    <body>
+        <label for="username">이름</label>
+        <input type="text" id="username" name="username"><br/>
+
+        <label for="departments">학부/학과</label>
+        <input list="departments">
+        <datalist id="departments">
+            <option value="software">Software</option>
+            <option value="education">Education</option>
+            <option value="chemistry">Chemistry</option>
+            <option value="social psychology">Social Psychology</option>
+        </datalist><br/>
+
+        <label for="grades">학년</label>
+        <input type="radio" id="1학년" name="grade" value="1학년">
+        <label for="1학년">1학년</label>
+        <input type="radio" id="2학년" name="grade" value="2학년">
+        <label for="2학년">2학년</label>
+        <input type="radio" id="3학년" name="grade" value="3학년">
+        <label for="3학년">3학년</label>
+        <input type="radio" id="4학년" name="grade" value="4학년">
+        <label for="4학년">4학년</label><br/>
+
+        <label for="num">학번</label>
+        <input type="number" id="num" name="num"><br/>
+
+        <label for="email">이메일</label>
+        <input type="email" id="email" name="email"><br/>
+
+        <label for="phone">전화번호</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br/>
+
+        <label for="motive">가입 동기</label>
+        <textarea name="motive" rows="5" cols="30"></textarea><br/>
+
+        <button type="button" onclick="alert('가입되었습니다!')">가입하기</button>
+        <button type="button" onclick="alert('취소되었습니다!')">취소하기</button>
+    </body>
+</html>

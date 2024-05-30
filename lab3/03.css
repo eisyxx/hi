@@ -1,0 +1,113 @@
+/* 헤더 스타일 */
+#top_header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 10px 0px 10px;
+    margin-bottom: 10px;
+}
+
+/* title과 nav 요소들을 옆으로 배열 */
+#title, nav {
+    display: inline-block; /* 요소들을 인라인 블록으로 설정하여 옆으로 배열 */
+    vertical-align: baseline; /* 상단 정렬 */
+}
+
+/* 네비게이션 스타일 */
+#navi {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+#navi li {
+    display: inline-block;
+    margin-right: 20px;
+    width: 150px;
+}
+
+#navi li ul{display: none;}
+
+#navi li :hover{
+    background-color:#fff;
+    color:#333;
+}
+
+#navi li :hover > #navi li ul {
+    display: block;
+    position: absolute;
+}
+
+#navi li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    width: 165px;
+    height: 30px;
+}
+
+/* 사이드바 스타일 */
+#login {
+    float: left;
+    width: 150px;
+    height:100vh;
+    padding: 20px;
+    background-color: #333;
+    color:#fff;
+}
+
+#ad article {
+    float: right;
+    background-color: rgb(249, 249, 229);
+    width: 170px;
+    height: 20%;
+    border: 1px solid rgb(34, 66, 182);
+    border-radius: 5%;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    clear: both;
+}
+
+/* card 클래스로 지정된 요소들의 스타일 수정 */
+.card {
+    display: inline-block;
+    flex-direction: column;
+    margin: 10px;
+    border: 3px solid #333;
+    border-radius: 5%;
+    padding: 5px;
+    box-shadow: 3px 3px 1px gray;
+    width: 500px;
+}
+
+.card h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* 푸터 스타일 */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    height: 55px;
+}
+
+#foot ul {
+    list-style-type: none;
+}
+
+#foot ul li {
+    display: inline-block;
+    margin-right: 120px;
+    margin-bottom: 5px;
+}
+
+#foot ul li a {
+    color: #fff;
+    text-decoration: none;
+}
