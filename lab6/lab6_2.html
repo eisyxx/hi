@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="kor">
+<head>
+    <meta charset="UTF-8">
+    <title>Lotto</title>
+</head>
+<body>
+    <form>
+        <h1>로또 번호 생성결과</h1>
+        <button id="bt">로또 번호 생성하기</button>
+        <h2 id="demo"></h2>
+        <button type="button" id="closeBtn">닫기</button>
+    </form>
+    <script>
+        function rand(min, max){
+            return Math.floor(Math.random()*(max-min+1))+min;
+        }
+
+        document.getElementById("bt").onclick=function(event){
+            event.preventDefault();
+            let numbers=[]
+        while(numbers.length<6){
+            let num=rand(1,45);
+            if(!numbers.includes(num)){
+                numbers.push(num);
+            }
+        }
+            document.getElementById("demo").innerHTML=numbers.join(", ");
+        };
+
+        document.getElementById("closeBtn").onclick=function(){
+            window.close();
+        }
+    </script>
+</body>
+</html>

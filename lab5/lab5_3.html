@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>비만도 계산</title>
+</head>
+<body>
+    <h2 id="이름"></h2>
+    <h2 id="나이"></h2>
+    <h2 id="키"></h2>
+    <h2 id="체중"></h2>
+    <h2 id="비만도"></h2>
+
+    <script>
+        let name=prompt("이름을 입력하시오");
+        let age=prompt("나이를 입력하세요(숫자)");
+        let height=prompt("키를 입력하시오(숫자)");
+        let weight=prompt("체중을 입력하시오(숫자)");
+
+        let kaup=weight/(height/100)**2
+        let obesity
+
+        if(age>19 && age<30){
+            if (kaup<=17.9){
+                obesity="저체중";
+            }
+            else if (kaup<=23){
+                obesity="표준체중";
+            }
+            else if (kaup<=30){
+                obesity="과체중";
+            }
+            else{
+                obesity="비만";
+            }
+        }
+        if(age>29 && age<40){
+            if (kaup<=18.4){
+                obesity="저체중";
+            }
+            else if (kaup<=24){
+                obesity="표준체중";
+            }
+            else if (kaup<=30){
+                obesity="과체중";
+            }
+            else{
+                obesity="비만";
+            }
+        }
+
+        document.getElementById("이름").innerHTML="이름: "+name;
+        document.getElementById("나이").innerHTML="나이: "+age;
+        document.getElementById("키").innerHTML="키: "+height;
+        document.getElementById("체중").innerHTML="체중: "+weight;
+        document.getElementById("비만도").innerHTML="당신은 "+obesity+"("+kaup+")입니다.";
+        
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta cahrset="UTF-8">
+    <title>countdown</title>
+</head>
+<body>
+    <script>
+        function countdownTimer(seconds){
+            const x=setInterval(function(){
+                if(seconds<=0){
+                    clearInterval(x);
+                    document.getElementById("demo").innerHTML="타이머 종료";
+                }
+                else{
+                    document.getElementById("demo").innerHTML=seconds;
+                }
+                seconds-=1;
+            },1000);
+        }
+        let seconds=prompt("카운트다운할 숫자를 입력하세요.");
+        countdownTimer(seconds);
+    </script>
+
+    <div id="demo"><h1></h1></div>
+</body>
+</html>
