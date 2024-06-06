@@ -24,3 +24,67 @@
     margin-right: 20px;
     width: 150px;
 }
+
+#navi li ul {display: none;}
+
+#navi li :hover{
+    background-color: bisque;
+    color: #333;
+}
+
+#navi li :hover > #navi li ul {
+    display: block;
+    position: absolute;
+}
+
+#navi li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    width: 165px;
+    height: 30px;
+}
+
+#login {
+    float: left;
+    width: 150px;
+    height: 100vh;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.card {
+    display: inline-block;
+    flex-direction: column;
+    margin: 10px;
+    border: 3px solid #333;
+    border-radius: 5%;
+    padding: 5px;
+    box-shadow: 3px 3px 1px gray;
+    width: 500px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    height: 55px;
+}
+
+#foot ul {
+    list-style-type: none;
+}
+
+#foot ul li {
+    display: inline-block;
+    margin-right: 120px;
+    margin-bottom: 5px;
+}
+
+#foot ul li a {
+    color: #fff;
+    text-decoration: none;
+}
