@@ -1,0 +1,26 @@
+#top-header {
+    background-color: aliceblue;
+    color: #333;
+    padding: 10px 10px 0px 10px;
+    margin-bottom: 10px;
+}
+
+#title, nav {
+    display: inline-block;
+    vertical-align: baseline;
+}
+
+#navi {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+#navi li {
+    display: inline-block;
+    margin-right: 20px;
+    width: 150px;
+}
